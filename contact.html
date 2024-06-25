@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmmOFH_nZEW-to7X49F-wU3kcwvkG0v44&callback=initMap" async defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="menu.html">Menü</a>
+            <a href="blog.html">Ürünlerimiz</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+          <div class="buttons">
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+            <button>
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button>
+              <i class="fas fa-bars"></i>
+            </button>
+            </div>
+        </header>
+       
+        </div>
+    </header>
+
+    <section class="contact">
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <h3>Adres</h3>
+                <p>Yüzüncüyıl Mah. Atatürk Cad. No:17,Zeytinburnu/İstanbul</p>
+                <h3>Telefon</h3>
+                <p>+90 212 456 7890</p>
+                <h3>Çağrı Merkezi</h3>
+                <p>+90 850 456 7891</p>
+                <h3>E posta</h3>
+                <p>iletisim@queensplace.com</p>
+                <h3>İş Birliği</h3>
+                <p>collabs@queensplace.com</p>
+            </div>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <script>
+        function initMap() {
+            var location = {lat: 40.712776, lng: -74.005974}; // Change to your desired coordinates
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+</body>
+</html>
